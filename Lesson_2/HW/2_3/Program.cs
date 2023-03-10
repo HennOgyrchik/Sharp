@@ -7,8 +7,6 @@ int n = int.Parse(Console.ReadLine()!);
 
 void MyFunc(int num)
 {
-    Console.WriteLine(num);
-
     while (num>=1000){
          num=num/10;
     }
