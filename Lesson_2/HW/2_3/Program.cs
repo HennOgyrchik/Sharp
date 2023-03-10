@@ -8,14 +8,18 @@ int n = int.Parse(Console.ReadLine()!);
 void MyFunc(int num)
 {
     Console.WriteLine(num);
-    int res = num / 100 % 10;
-    if (res != 0)
-    {
-        Console.Write(res);
+
+    while (num>=1000){
+         num=num/10;
     }
-    else
-    {
-        Console.Write("Третьей цифры нет");
+
+    if (num<100){
+        Console.Write("Третьего числа нет");
+    
+    } else {
+         Console.Write(num%10);
     }
+
 }
+
 MyFunc(n);
